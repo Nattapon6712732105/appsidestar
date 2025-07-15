@@ -1,1 +1,31 @@
 {% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="text-center">
+        <h1 class="display-4 mb-4">ยินดีต้อนรับสู่เว็บไซต์ของเรา</h1>
+        <p class="lead mb-5">เว็บไซต์นี้สร้างขึ้นด้วย Django และ Bootstrap เพื่อเป็นตัวอย่างหน้าแรกที่สวยงามและใช้งานง่าย</p>
+        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" class="img-fluid rounded shadow mb-4" alt="Welcome" style="max-width: 500px;">
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">เกี่ยวกับเรา</h5>
+                        <p class="card-text">เรียนรู้เพิ่มเติมเกี่ยวกับทีมงานและเป้าหมายของเรา</p>
+                        <a href="{% url 'about' %}" class="btn btn-primary">อ่านเพิ่มเติม</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">ติดต่อเรา</h5>
+                        <p class="card-text">หากมีข้อสงสัยหรือข้อเสนอแนะ สามารถติดต่อเราได้ที่นี่</p>
+                        <a href="{% url 'contact' %}" class="btn btn-success">ติดต่อ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
