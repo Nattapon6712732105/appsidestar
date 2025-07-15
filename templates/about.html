@@ -1,8 +1,49 @@
+
 {% extends "base.html" %}
+{% load static %}
 
 {% block content %}
-<div class="container mt-4">
-    <h1>เกี่ยวกับเรา</h1>
-    <p>ยินดีต้อนรับสู่หน้าเกี่ยวกับเรา! ที่นี่คุณสามารถใส่ข้อมูลเกี่ยวกับเว็บไซต์หรือองค์กรของคุณ เช่น ประวัติความเป็นมา วิสัยทัศน์ พันธกิจ หรือทีมงาน</p>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="card shadow border-success mb-4">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-5 text-center p-3">
+                        <img src="{% static 'assets/img/myfarm.jpg' %}" class="img-fluid rounded shadow-sm border border-3 border-success" alt="My Farm" style="max-width: 100%; max-height: 320px; object-fit:cover; background:#f9fbe7;">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="card-body">
+                            <h1 class="mb-3" style="color:#4e8234;">เรื่องราวของฟาร์มไซด์</h1>
+                            <p style="font-size:1.2rem; color:#6c757d;">
+                                ฟาร์มไซด์เริ่มต้นจากความรักในธรรมชาติและความตั้งใจที่จะส่งเสริมเกษตรกรรมไทยให้ทันสมัยและยั่งยืน<br>
+                                เราเชื่อว่าการเกษตรคือหัวใจของชุมชนและรากฐานของชีวิตที่ดี<br>
+                                <br>
+                                <b>วิสัยทัศน์:</b> เป็นศูนย์กลางความรู้และนวัตกรรมด้านการเกษตร เพื่อสร้างแรงบันดาลใจและยกระดับคุณภาพชีวิตเกษตรกรไทย<br>
+                                <b>พันธกิจ:</b> ถ่ายทอดความรู้ เทคนิค และประสบการณ์จริงจากฟาร์มสู่ชุมชน พร้อมสนับสนุนการพัฒนาอย่างยั่งยืน
+                            </p>
+                            <div class="mt-4" style="color:#7a5c1e; font-style:italic;">
+                                “เรามุ่งมั่นสร้างสรรค์สังคมเกษตรที่เข้มแข็งและเป็นมิตรกับธรรมชาติ”
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+        <div class="col-lg-8">
+            <div class="card border-info shadow-sm">
+                <div class="card-body">
+                    <h4 class="mb-3" style="color:#1976d2;">แนะนำตัวผู้จัดทำ</h4>
+                    <p style="font-size:1.1rem; color:#444;">
+                        สวัสดีครับ ผมชื่อ <b>นาย ณัฐพล บุญนะรา</b> รหัสนักศึกษา 6712732105<br>
+                        คณะศิลปศาสตร์และวิทยาศาสตร์ สาขาวิทยาการคอมพิวเตอร์ ชั้นปีที่ 2<br>
+                        หากมีข้อเสนอแนะหรืออยากพูดคุย สามารถติดต่อผมได้ทางหน้า <a href="{% url 'contact' %}">ติดต่อ</a> ครับ
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock %}
