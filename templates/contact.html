@@ -1,1 +1,35 @@
 {% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="mb-4">ติดต่อเรา</h1>
+    <div class="row">
+        <div class="col-md-6">
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">ชื่อ</label>
+                    <input type="text" class="form-control" id="name" placeholder="กรอกชื่อของคุณ">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">อีเมล</label>
+                    <input type="email" class="form-control" id="email" placeholder="example@email.com">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">ข้อความ</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="พิมพ์ข้อความของคุณ"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">ส่งข้อความ</button>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <div class="card p-3">
+                <h5>ข้อมูลติดต่อ</h5>
+                <p class="mb-1"><i class="fas fa-map-marker-alt"></i> 123 ถนนตัวอย่าง เขตตัวอย่าง กรุงเทพฯ 10000</p>
+                <p class="mb-1"><i class="fas fa-phone"></i> 02-123-4567</p>
+                <p class="mb-1"><i class="fas fa-envelope"></i> info@example.com</p>
+                <p class="mb-0"><i class="fas fa-clock"></i> เวลาทำการ: จันทร์-ศุกร์ 09:00-17:00 น.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
